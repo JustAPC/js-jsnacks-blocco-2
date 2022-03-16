@@ -1,10 +1,11 @@
 let nomi = ["Luca ", "Paolo ", "Daniele ", "Marco ", "Michele "]
 
 let cognomi = ["Rossi","Ferrari","Russo","Bianchi","Romano"]
- 
-let nomeCognome = nomi + cognomi
 
-for (i=0; i < nomeCognome.length; i++) {
-    let nomeCompleto = nomi[i] + cognomi[i]
-    console.log (nomeCompleto)
+for (i=0; i < nomi.length; i++) {
+    let y = Math.floor(Math.random() * (cognomi.length))
+    let nome = nomi[i]
+    let cognome = cognomi[y]
 }
+
+document.getElementById("risultato").innerHTML = nome + cognome
